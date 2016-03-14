@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="../static/grayscale.css" rel="stylesheet">
+    <link href="../static/font.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='starter.css') }}" rel="stylesheet">
+  </head>
+
+  <body>
+
+ <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Search</h1>
+                        <p class="intro-text">Type what you wish to search</p>
+                        <a href="#about">
+                          <form action="." method="POST">                      
+                            <div class="input-group input-group-lg" action="." method="POST">
+                              <span class="input-group-addon" id="sizing-addon1">@</span>
+                                <input type="text" name="text" class="form-control" placeholder="Search Here" aria-describedby="sizing-addon1">
+                            </div>
+                          </form>
+                          {% block body %}{% endblock %}
+                  
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+
+  </body>
+</html>
